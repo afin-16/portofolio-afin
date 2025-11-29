@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Afin</title>
+    <style>
+        /* --- RESET DASAR --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* --- NAVIGASI (MENU ATAS) --- */
+        nav {
+            background-color: #333; /* Warna hitam */
+            padding: 15px;
+            text-align: center;
+            position: sticky; /* Biar nempel pas discroll */
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #E1306C; /* Efek warna pas disorot */
+        }
+
+        /* --- CONTAINER UTAMA --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Tengah */
+            padding: 20px;
+        }
+
+        /* --- JUDUL SECTION --- */
+        h2.section-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .center-title {
+            text-align: center;
+        }
+
+        /* --- BAGIAN 1: ABOUT (MODEL KTP KAMU TADI) --- */
+        .ktp-card {
+            background-color: white;
+            border: 3px solid black;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 50px; /* Jarak ke bawah */
+        }
+        .data-diri { flex: 1; line-height: 1.8; font-weight: bold; }
+        .area-foto { width: 150px; display: flex; flex-direction: column; align-items: center; }
+        .bingkai-foto {
+            width: 150px; height: 200px; border: 2px solid black;
+            margin-bottom: 10px; background-color: #ddd;
+        }
+        .ig-icon { width: 35px; height: 35px; fill: black; cursor: pointer; }
+        .ig-icon:hover { fill: #E1306C; }
+
+        /* --- BAGIAN 2: PROJECT (KARTU TUGAS) --- */
+        .project-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            width: 220px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px); /* Efek naik dikit pas disorot */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .project-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .project-card h3 { margin: 10px 0; font-size: 18px; }
+        .project-card p { font-size: 14px; color: #666; }
+
+        /* --- FOOTER (BAWAH) --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">Tentang Saya</a>
+        <a href="#projects">Tugas Saya</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="center-title">
+            <h2 class="section-title" id="about">Profil Mahasiswa</h2>
+        </div>
+        
+        <div class="ktp-card">
+            <div class="data-diri">
+                <p>NAMA : Afin Saputra</p>
+                <p>NPM : 25783002</p>
+                <p>JURUSAN : Manajemen Informatika</p>
+                <p>KELOMPOK : 2 (Java)</p>
+                <p>HOBI : Ngegame, Membaca</p>
+                <p>STATUS : Mahasiswa Polinela</p>
+            </div>
+            <div class="area-foto">
+                <div class="bingkai-foto">
+                    <img src="foto.jpeg" alt="Foto Afin" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <a href="https://www.instagram.com/afin.sa?igsh=ZGw2eDQza2hqdGY=" target="_blank">
+                    <svg class="ig-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm5.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9a3 3 0 100 6 3 3 0 000-6z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="center-title">
+            <h2 class="section-title" id="projects">Hasil Belajar</h2>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon">🌐</div>
+                <h3>Web Portofolio</h3>
+                <p>Tugas membuat website biodata menggunakan HTML dan CSS dasar.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🧠</div>
+                <h3>Logika Informatika</h3>
+                <p>Tugas membuat pernyataan logika (P, Q, R) dan tabel kebenaran.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">☕</div>
+                <h3>Dasar Java</h3>
+                <p>Belajar algoritma dasar dan percabangan dalam bahasa Java.</p>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">🎨</div>
+                <h3>Desain UI/UX</h3>
+                <p>Belajar membuat wireframe dan mockup aplikasi sederhana.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <p>Copyright © 2025 - Afin Saputra</p>
+        <p>Mahasiswa Politeknik Negeri Lampung</p>
+    </footer>
+
+</body>
+</html>
